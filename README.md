@@ -1,4 +1,5 @@
 # Módulo 3 - Trilha HTML
+![Alt text](image.png)
 
 **Título:** Recriando Wikipedia, com um layout melhor :)
 
