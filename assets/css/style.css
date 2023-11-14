@@ -36,3 +36,24 @@ a { color:blue; text-decoration: none;}
 figure {
     text-align: center;
 }
+
+table {
+    border: solid 1px black;
+    box-shadow: 27px 36px 4px -10px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 27px 36px 4px -10px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 27px 36px 4px -10px rgba(0, 0, 0, 0.28);
+    
+}
+
+table tbody tr:nth-child(even) td{
+    background-color: lightgray;
+}
+
+table tbody tr:hover td{
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+table thead tr th{
+    background-color: grey;
+}

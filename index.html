@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,158 @@
     <title>Página Principal</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <div>   
+    <header>
         <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+            <img src="assets/images/Captura de tela 2023-11-14 021000.png" width="200" />
         </div>
-    </div>
+    </header>
 
     <div class="bar"></div>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
+    <main class="content">
+        <nav class="sidebar">
+            <h2>Google Hacking</h2>
             <ul>
-                <li><a href="#">Links</a></li>
+                <li><a href="https://pt.wikibooks.org/wiki/Guia_do_hacker/Google_hacking">Guia Google Hacking</a></li>
+                <li><a
+                        href="https://web.archive.org/web/20140822191407/http://www.boris-koch.de/wp-content/uploads/2011/01/Liste-Google-Hacking.pdf">Google
+                        Hacking Document</a>
+                </li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="main">
-            
-        </div>
+        <article class="main">
+            <h1 id="inicio">Google Hacking</h1>
+            <p>
+                Google hacking, também chamado de Google dorking, é uma técnica hacker que usa o Google Busca e
+                outras aplicações do Google para encontrar brechas de segurança na configuração ou nos códigos
+                utilizados pelos sítios web. Google dorking também pode ser usado para OSINT, coletar informações de
+                fontes disponíveis ao público.
+            </p>
 
-        <div class="anchors">
+            <h2 id="basico">Básico</h2>
+            <p>
+                Google Hacking envolve uso de operadores de busca avançados no Google Busca para localizar erros
+                específicos de escrita em resultados de busca. Alguns exemplos populares são métodos de encontrar
+                versões de aplicativos Web vulneráveis. Uma busca escrita com intitle:admbook intitle:Fversion
+                filetype:php pode localizar todas as páginas web que tem um texto específico no seu código de
+                programação. É padrão que as aplicações incluam no código suas versões em funcionamento no servidor, por
+                exemplo, "Powered by XOOPS 2.2.3 Final".
+            </p>
+            <p>
+                Dispositivos conectados à internet podem ser encontrados. Usar a expressão inurl:"ViewerFrame?Mode=" irá
+                encontrar câmeras web públicas.
+            </p>
+            <p>
+                Outra expressão de pesquisa útil é intitle:index.of seguido de uma palavra-chave. Esta expressão poderá
+                dar uma lista de ficheiros em servidores. Por exemplo, intitle:index.of mp3 retornará todos os arquivos
+                MP3 disponíveis em vários servidores.
+            </p>
+            <p>
+                Usar símbolos ou palavras na pesquisa faz com que os resultados fiquem mais precisos.
+            <ul>
+                <li>Google Busca geralmente ignora pontuação.</li>
+                <li>Não colocar espaços entre símbolos ou palavras. A pesquisa site:wikipedia.org vai funcionar, mas
+                    site: wikipedia.org não.</li>
+            </ul>
+            </p>
+
+            <h2 id="operadores">Operadores Avançados</h2>
+            <p>
+                Muitos operadores avançados podem ser utilizados para explorar vulnerabilidades em sites, que podem ser
+                usados isoladamente (sozinho) ou em grupo (conjunto de operadores).
+            </p>
+            <table border="2" cellspacing="3" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Exemplo</th>
+                        <th>Propósito</th>
+                        <th>Web</th>
+                        <th>Imagens</th>
+                        <th>Grupos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>site</td>
+                        <td>site:https://pt.wikipedia.org/wiki/Wikipédia</td>
+                        <td>Pesquisa um site específico</td>
+                        <td>não</td>
+                        <td>sim</td>
+                        <td>sim</td>
+                    </tr>
+
+                    <tr>
+                        <td>related</td>
+                        <td>related:wikipedia.org</td>
+                        <td>Pesquisa por sites relacionados</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+
+                    <tr>
+                        <td>cache</td>
+                        <td>cache:wikipedia.org</td>
+                        <td>Pesquisa com os sites salvos no cache do Google</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+
+                    <tr>
+                        <td>intitle</td>
+                        <td>intitle:wikipedia</td>
+                        <td>Pesquisa o título de uma página</td>
+                        <td>sim</td>
+                        <td>sim</td>
+                        <td>sim</td>
+                    </tr>
+
+                    <tr>
+                        <td>allintitle</td>
+                        <td>intitle:wikipedia</td>
+                        <td>Pesquisa o título de uma página</td>
+                        <td>sim</td>
+                        <td>sim</td>
+                        <td>sim</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <p>
+                Para uma lista de todos os operadores, tem a referência do próprio Google Busca. Para limitar o uso
+                indevido da ferramenta de busca do Google, foi inserido o método de verificação CAPTCHA após algumas
+                pesquisas avançadas serem realizadas.
+            </p>
+            <h2 id="protecao">Proteção</h2>
+            <p>
+                Robots.txt é um arquivo bem conhecido para a otimização de busca e proteção contra Google Dorking. Seu
+                uso faz com que previna que o mecanismo de busca do Google faça mapeamentos indevidos na rede.
+            </p>
+
+
+
+
+        </article>
+
+        <nav class="anchors">
             <h2>Neste Artigo</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#basico">Basico</a></li>
+                <li><a href="#operadores">Operadores Avançados</a></li>
+                <li><a href="#protecao">Proteção</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </main>
 
-    <div class="footer">
-
-    </div>
+    <footer class="footer">
+        <p>Pagina criada em 14/11/2023 às 01:41</p>
+    </footer>
 </body>
+
 </html>
